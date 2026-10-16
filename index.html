@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sweet Ten – every candy R10</title>
+<title>the candy world – any candy for any amount</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   --pink:#ff4f9a; --lime:#b6f03c; --lemon:#ffd93b; --line:#f0d4e3;
   color-scheme:light;
 }
-@media (prefers-color-scheme:dark){
+@media (prefers-color-scheme:pink){
   :root:not([data-theme="light"]){
     --bg:#1b1132; --surface:#271a47; --ink:#fdf2fa; --muted:#b9a9d9; --line:#3d2c66; color-scheme:dark;
   }
@@ -27,7 +27,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.5 Nunito,system-ui,sans-serif;padding-bottom:5.5rem}
-h1,h2,h3,.brand{font-family:Fredoka,"Trebuchet MS",system-ui,sans-serif;margin:0}
+h1,h2,h3,.brand{font-family:Fredoka,"Thebuchet MS",system-ui,sans-serif;margin:0}
 .wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
 header.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
 .brand{font-weight:700;font-size:1.5rem;color:var(--pink)}
@@ -84,17 +84,17 @@ footer{color:var(--muted);text-align:center;padding:2.5rem 0 1rem;font-size:.9re
   <div class="strip t"></div><div class="strip b"></div>
   <div class="candy" aria-hidden="true">🍬</div>
   <h2>Howzit!</h2>
-  <p>Welcome to Sweet Ten. Lekker sweets, every one R10.</p>
+  <p>Welcome to candy world.</p>
   <div class="load"><i></i></div>
   <small>Tap anywhere to skip</small>
 </div>
 <div class="wrap">
-  <header class="top"><div class="brand">🍬 elihle candy store</div><a class="btn alt" href="#shop">Shop</a></header>
+  <header class="top"><div class="brand">🍬 elihle candy store</div><a class="btn alt" href="#buy">Shop</a></header>
   <section class="hero">
     <div>
-      <h1>Every sweet is ten rand.</h1>
-      <p>Pick a handful, no maths needed. Each candy costs R10, always.</p>
-      <a class="btn" href="#shop">Pick your sweets</a>
+      <h1>every sweet brings joy.</h1
+      <p>Pick a handful, no maths needed.</p>
+      <a class="btn" href="#shop">Pick your candy</a>
     </div>
     <div class="tag" aria-hidden="true"><b>R25</b><span>each, always</span></div>
   </section>
@@ -130,13 +130,13 @@ footer{color:var(--muted);text-align:center;padding:2.5rem 0 1rem;font-size:.9re
 
 var PRICE = 10;
 var PRODUCTS = [
-  {id:"toffee", name:"Toffee Chews", emoji:"🍬", desc:"Soft, buttery and slow to finish.", bg:"#ffd9a8"},
-  {id:"lolly", name:"Rainbow Lollipop", emoji:"🍭", desc:"A big swirl that lasts the walk home.", bg:"#ffc2dd"},
-  {id:"choc", name:"Milk Choc Squares", emoji:"🍫", desc:"Smooth milk chocolate, snap-style.", bg:"#e3c4a8"},
-  {id:"bears", name:"Gummy Bears", emoji:"🧸", desc:"Fruity, chewy and mixed colours.", bg:"#c9f27a"},
-  {id:"worms", name:"Sour Worms", emoji:"🪱", desc:"Sour sugar coat, sweet inside.", bg:"#b5ecd0"},
-  {id:"fizz", name:"Strawberry Fizz", emoji:"🍓", desc:"Berry jellies that tingle on the tongue.", bg:"#ffb3c1"},
-  {id:"lemon", name:"Lemon Drops", emoji:"🍋", desc:"Bright, tangy hard candy.", bg:"#fff08a"},
+  {id:"toffee", name:"candy pop", emoji:"🍬", desc:"A bright pop of sugary deliciousness full of flavour.", bg:"#ffd9a8"},
+  {id:"lolly", name:"Rainbow Lollipop", emoji:"🍭", desc:"Classic sweet on a stick that lasts the whole day.", bg:"#ffc2dd"},
+  {id:"choc", name:"Chocolate Bar", emoji:"🍫", desc:"Milk chocolate with a rich snap style and smooth texture.", bg:"#e3c4a8"},
+  {id:"bears", name:"Gummy Bears", emoji:"🧸", desc:"Chewy bears with different flavours.", bg:"#c9f27a"},
+  {id:"worms", name:"Sour Worms", emoji:"🪱", desc:"Sour coat with sugary taste on the inside.", bg:"#b5ecd0"},
+  {id:"fizz", name:"Strawberry Fizz", emoji:"🍓", desc:"Filled with berry jellies that dance on your tongue.", bg:"#ffb3c1"},
+  {id:"lemon", name:"Lemon fizz", emoji:"🍋", desc:"Bright candy with sour pop.", bg:"#fff08a"},
   {id:"grape", name:"Grape Jellies", emoji:"🍇", desc:"Deep purple, juicy and chewy.", bg:"#d9c2ff"}
 ];
 var cart = {};
